@@ -1,0 +1,26 @@
+name: validate presets
+
+on:
+  pull_request:
+    paths:
+      - 'presets/**'
+      - 'scripts/validate-presets.mjs'
+      - '.github/workflows/validate.yml'
+  push:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install ajv
+        run: npm init -y && npm install --save-dev ajv ajv-formats
+
+      - name: Validate presets
+        run: node scripts/validate-presets.mjs
