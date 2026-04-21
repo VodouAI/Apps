@@ -1,8 +1,8 @@
-# VodouAI/integrations
+# VodouAI/Apps
 
-The public catalog of integration presets bundled with the [Vodou](https://vodou.ai) gateway.
+The public catalog of app presets bundled with the [Vodou](https://vodou.ai) gateway.
 
-Each JSON file in `presets/` describes a remote MCP server the gateway can connect to. Contributors add new integrations via pull request — **one JSON file, no code changes**.
+Each JSON file in `presets/` describes a remote MCP server the gateway can connect to. Contributors add new apps via pull request — **one JSON file, no code changes**.
 
 ## Contribute a preset
 
@@ -22,7 +22,7 @@ See [`presets/README.md`](presets/README.md) for the full contributor guide — 
 
 - Each Vodou release cuts a snapshot of this repo at a pinned commit SHA.
 - The gateway's `src/api/oauth-presets.ts` loader reads from a local `presets/` directory that the release build populates by cloning this repo.
-- Merged presets appear in end-users' `#/integrations` page on their next gateway update.
+- Merged presets appear in end-users' `#/apps` page on their next gateway update.
 
 ## License
 
