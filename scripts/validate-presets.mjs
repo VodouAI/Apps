@@ -4,7 +4,7 @@
  * preset JSON in ../presets/*.json. Exits non-zero if any preset fails.
  *
  * Used locally by contributors (`npm run validate-presets`) AND in the
- * `VodouAI/integrations` repo's CI workflow (same file, vendored).
+ * `VodouAI/Apps` repo's CI workflow (same file, vendored).
  *
  * Requires `ajv` + `ajv-formats` as devDependencies of the gateway package.
  */

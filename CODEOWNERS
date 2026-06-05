@@ -1,5 +1,5 @@
 # All changes require review from the VodouAI org.
-# Once a maintainers team is added (e.g. @VodouAI/integrations-maintainers), narrow this down.
+# Once a maintainers team is added (e.g. @VodouAI/apps-maintainers), narrow this down.
 *                                 @VodouAI
 presets/                          @VodouAI
 .github/workflows/                @VodouAI
